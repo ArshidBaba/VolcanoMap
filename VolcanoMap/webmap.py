@@ -25,4 +25,4 @@ def color(elev):
 for lat,lon,name,elev in zip(df['Latitude'], df['Longitude'], df['VolcanoName'], df['Elevation']):
 	folium.Marker(location=[lat,lon], popup=name, icon=folium.Icon(color=color(elev), icon='cloud')).add_to(map4)
 
-print(map4.save('test6.html'))
+print(map4.save('map.html'))
